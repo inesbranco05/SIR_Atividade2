@@ -1,0 +1,210 @@
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Centraliza verticalmente */
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Botões principais */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px 0;
+    width: auto; /* Botões não ocupam toda a largura */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Tabela */
+table {
+    width: 80%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Botões dentro da tabela */
+td button {
+    padding: 6px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0 5px; /* Espaçamento entre os botões */
+}
+
+td button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+td button:active {
+    transform: scale(1);
+}
+
+/* Formulário de Adicionar Aluno */
+#addStudentForm {
+    width: 50%;
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#addStudentForm input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#addStudentForm button {
+    width: 100%;
+    padding: 12px;
+    background-color:  #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#addStudentForm button:hover {
+    background-color:  #007bff;
+}
+
+/* Formatação para quando o formulário está visível */
+#addStudentForm.show {
+    display: flex;
+}
+
+/* Contêiner principal para centralizar conteúdo */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilização de campos de entrada do formulário */
+input[type="text"], input[type="number"] {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Melhorias na tabela e no layout */
+table {
+    width: 80%;
+    max-width: 1200px;
+}
+
+th, td {
+    font-size: 16px;
+    padding: 15px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: auto;
+    margin: 10px 0;
+}
+
+/* Estilo para o texto da tabela */
+th, td {
+    font-size: 16px;
+    padding: 12px;
+    text-align: center;
+    color: #555;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    width: 80%;
+    margin-top: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "sir_atividade2",
+  "version": "1.0.0",
+  "description": "API para Gerenciamento de Estudantes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "lowdb": "^3.0.0",
+    "nanoid": "^5.0.8",
+    "nodemon": "^3.1.7"
+  }
+}

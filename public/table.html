@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Alunos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ligação ao arquivo CSS para estilo -->
+</head>
+<body>
+
+    <h1>Gestão de Alunos</h1>
+    
+    <!-- Formulário para adicionar um novo aluno -->
+    <div id="addStudentForm" style="display: none;">
+        <h2>Adicionar Aluno</h2>
+        <form id="studentForm" onsubmit="addStudent(event)">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="text" id="course" placeholder="Curso" required>
+            <input type="number" id="year" placeholder="Ano do Curso" required>
+            <button type="submit">Adicionar</button>
+            <button type="button" onclick="hideAddStudentForm()">Cancelar</button>
+        </form>
+    </div>
+
+    <!-- Botão para abrir o formulário de adição -->
+    <button onclick="showAddStudentForm()">Adicionar Aluno</button>
+
+    <!-- Tabela para exibir os alunos -->
+    <table id="studentsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Curso</th>
+                <th>Ano do Curso</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os dados dos alunos serão preenchidos aqui via JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script> <!-- Ligação ao arquivo JavaScript -->
+</body>
+</html>

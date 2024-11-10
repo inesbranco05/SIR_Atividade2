@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "id": 1731276626492,
+      "name": "Inês Branco",
+      "course": "Engenharia Informática",
+      "year": "3"
+    },
+    {
+      "id": 1731276915355,
+      "name": "Rui",
+      "course": "Enfermagem",
+      "year": "1"
+    },
+    {
+      "id": 1731277726918,
+      "name": "Joana",
+      "course": "Turismo",
+      "year": "1"
+    },
+    {
+      "id": 1731278434169,
+      "name": "Henrique",
+      "course": "Gestão",
+      "year": "2"
+    },
+    {
+      "id": 1731278485227,
+      "name": "Ana",
+      "course": "Historia",
+      "year": "2"
+    }
+  ]
+}
